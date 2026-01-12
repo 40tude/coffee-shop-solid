@@ -1,6 +1,6 @@
 # Coffee Shop Order System - SOLID Principles in Rust
 
-A fully functional coffee shop ordering system that demonstrates all five SOLID principles in Rust.
+A fully functional coffee shop ordering system that demonstrates all five **SOLID principles** in Rust.
 
 ## Quick Start
 
@@ -21,7 +21,7 @@ cargo run
 
 ## What This Project Demonstrates
 
-This is a companion project to the blog post "SOLID Principles in Rust: A Practical Guide". While the blog post explains the theory with code snippets, this project shows a complete, working application where all five SOLID principles work together.
+This is a companion project to the blog post "[SOLID Principles in Rust: A Practical Guide](https://www.40tude.fr/docs/06_programmation/rust/022_solid/solid_00.html)". While the blog post explains the theory with code snippets, this project shows a complete, working application where all five **SOLID principles** work together.
 
 ### The Coffee Shop Domain
 
@@ -193,7 +193,7 @@ cargo run
 This starts an interactive CLI where you can:
 1. Create orders with different beverages
 2. Choose payment methods
-3. See how SOLID principles allow easy extension
+3. See how **SOLID principles** allow easy extension
 
 ### Extending the System
 
@@ -222,7 +222,7 @@ impl Beverage for Latte {
 }
 ```
 
-That's it! No changes needed anywhere else. OCP in action. ✓
+That's it! No changes needed anywhere else. OCP in action.
 
 #### Add a New Payment Method (OCP, DIP)
 
@@ -239,7 +239,7 @@ impl PaymentProcessor for MobilePayment {
 }
 ```
 
-Wire it up in `main.rs`. Business logic unchanged. OCP + DIP in action. ✓
+Wire it up in `main.rs`. Business logic unchanged. OCP + DIP in action.
 
 #### Add Database Storage (OCP, DIP)
 
@@ -258,7 +258,7 @@ impl OrderRepository for PostgresOrderRepository {
 }
 ```
 
-Business logic (`OrderService`) requires **zero changes**. DIP in action. ✓
+Business logic (`OrderService`) requires **zero changes**. DIP in action.
 
 ## Testing
 
@@ -290,9 +290,9 @@ Notice how easy testing is thanks to SOLID:
 
 ## Further Reading
 
-- Blog post: [SOLID Principles in Rust: A Practical Guide](link-to-come)
+- Blog post: [SOLID Principles in Rust: A Practical Guide](https://www.40tude.fr/docs/06_programmation/rust/022_solid/solid_00.html)
 - [Clean Architecture](https://amzn.eu/d/1KhmQKq) by Robert C. Martin
-- [Detailed summary](https://github.com/serodriguez68/clean-architecture/tree/master)
+- [Detailed summary](https://github.com/serodriguez68/clean-architecture/tree/master) by Sergio Rodríguez
 - Rust Book - Traits: https://doc.rust-lang.org/book/ch10-02-traits.html
 
 ## License

@@ -1,14 +1,14 @@
 // Coffee Shop Order System - Interactive Demo
-// 
+//
 // This demo shows all SOLID principles working together in a real application.
-// 
+//
 // Run: cargo run
-// 
-// The demo allows you to:
+//
+// The demo allows us to:
 // 1. Create orders with different beverages
-// 2. Choose payment methods (demonstrating OCP)
-// 3. See how components work together (demonstrating DIP)
-// 4. Swap implementations easily (demonstrating LSP)
+// 2. Choose payment methods (demonstrating OCP - open close principle)
+// 3. See how components work together (demonstrating DIP - dependency inversion principle)
+// 4. Swap implementations easily (demonstrating LSP - Liskov substitution principle)
 
 use coffee_shop_solid::*;
 use std::io::{self, Write};
@@ -205,7 +205,10 @@ where
                 for order in orders {
                     println!("\n---------------------------");
                     println!("Order ID: {}", order.id);
-                    println!("Customer: {} ({})", order.customer.name, order.customer.email);
+                    println!(
+                        "Customer: {} ({})",
+                        order.customer.name, order.customer.email
+                    );
                     println!("Items: {}", order.items.len());
                     println!("Total: ${:.2}", order.total_price);
                     println!("Status: {:?}", order.status);
@@ -222,7 +225,9 @@ where
 /// Demonstrate Open-Closed Principle
 fn demonstrate_ocp() {
     println!("\n=== OPEN-CLOSED PRINCIPLE (OCP) ===");
-    println!("\nOCP states: \"Software should be open for extension but closed for modification.\"");
+    println!(
+        "\nOCP states: \"Software should be open for extension but closed for modification.\""
+    );
     println!("\nIn this system:");
     println!("\n1. BEVERAGES (Open for Extension):");
     println!("   - We have Coffee, Tea, Smoothie");
@@ -270,7 +275,7 @@ fn demonstrate_lsp() {
     println!("   let service2 = OrderService::new(repo, CreditCardPayment::new(...), notifier);");
     println!("   ```");
     println!("   Both work identically. Same interface, predictable behavior.");
-    println!("\n💡 LSP ensures you can swap implementations without surprises.");
+    println!("\n💡 LSP ensures we can swap implementations without surprises.");
     println!("   If it implements the trait, it MUST behave correctly.");
 }
 
