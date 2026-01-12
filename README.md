@@ -4,16 +4,19 @@ A fully functional coffee shop ordering system that demonstrates all five SOLID 
 
 ## Quick Start
 
-```bash
+```powershell
 # Clone the repository
-git clone https://github.com/yourusername/coffee-shop-solid
+git clone https://github.com/40tude/coffee-shop-solid
 cd coffee-shop-solid
 
-# Run the interactive demo
-cargo run
+# If you are an happy Win11 users
+./start.ps1
 
 # Run tests
 cargo test
+
+# Run the interactive demo
+cargo run
 ```
 
 ## What This Project Demonstrates
@@ -31,6 +34,11 @@ The system models a simple coffee shop where:
 - Reports can be generated in different formats
 
 ## SOLID Principles in Action
+* **S**ingle Responsibility Principle
+* **O**pen-Closed Principle
+* **L**iskov Substitution Principle
+* **I**nterface Segregation Principle
+* **D**ependency Inversion Principle
 
 ### 1. Single Responsibility Principle (SRP)
 
@@ -282,8 +290,9 @@ Notice how easy testing is thanks to SOLID:
 
 ## Further Reading
 
-- Blog post: [SOLID Principles in Rust: A Practical Guide](link-to-your-blog)
-- *Clean Architecture* by Robert C. Martin
+- Blog post: [SOLID Principles in Rust: A Practical Guide](link-to-come)
+- [Clean Architecture](https://amzn.eu/d/1KhmQKq) by Robert C. Martin
+- [Detailed summary](https://github.com/serodriguez68/clean-architecture/tree/master)
 - Rust Book - Traits: https://doc.rust-lang.org/book/ch10-02-traits.html
 
 ## License
